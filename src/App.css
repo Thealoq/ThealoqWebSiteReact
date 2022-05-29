@@ -1,0 +1,256 @@
+.App {
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.nick {
+  color: #F08CAE;
+}
+
+.avatar {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all .3s ease-in-out;
+}
+
+.avatar img {
+  width: 256px;
+  max-width: 256px;
+  border-radius: 50%;
+}
+
+.boxiy{
+  background-repeat:round;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #4D2D52;
+  height: 500px;
+  transition: all .3s ease-in-out;
+}
+
+.avatar :hover {
+  filter: grayscale(0.5);
+  transition: all .3s ease-in-out;
+}
+
+.TextAll {
+  transition: all .3s ease-in-out;
+}
+
+.TextAll :hover {
+  font-size: 26px;
+  transition: all .3s ease-in-out;
+}
+
+
+.Text{
+  border-radius: 5px;
+  padding: 0.2rem;
+  background-color: #4D2D52;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.online {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  background-color: darkgreen;
+  position: absolute;
+  margin-top: 12rem;
+  margin-left: 10rem;
+}
+
+.offline {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background-color: rgb(56, 53, 53);
+  border: rgb(75, 73, 73) solid 12px;
+  position: absolute;
+  margin-top: 12rem;
+  margin-left: 10rem;
+}
+
+.idle {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  background-color: rgb(221, 122, 9);
+  position: absolute;
+  margin-top: 12rem;
+  margin-left: 10rem;
+}
+
+
+.dnd {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  background-color: rgb(204, 38, 38);
+  position: absolute;
+  margin-top: 12rem;
+  margin-left: 10rem;
+}
+
+.bio {
+  flex-direction: column;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+
+
+
+.bio img {
+  width: 256px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.spoftytext {
+  color: black;
+  padding: 1rem;
+  margin-top: -3rem;
+  width: 40%;
+  border-radius: 12px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.spoftytext div {
+  padding: 0.5rem;
+}
+
+.biom {
+  flex-direction: column;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+
+
+.vsctext {
+  color: black;
+  padding: 1rem;
+  margin-top: -3rem;
+  width: 40%;
+  border-radius: 12px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.smalltitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bio :hover {
+  background-color: #4D2D52;
+  transition: all .3s ease-in-out;
+  color: white;
+}
+
+.boxi {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .3s ease-in-out;
+  flex-wrap: wrap;
+}
+
+.boxa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all .3s ease-in-out;
+  background-color: #4D2D52;
+  margin: 1rem;
+  padding: 0.5rem;
+  width: 15%;
+  border-radius: 12px;
+}
+
+.boxi :hover {
+  filter: grayscale(0.5);
+  transition: all .3s ease-in-out;
+}
+
+
+ 
+
+
+ .boxatitle {
+   margin-top: 1rem;
+ }
+
+ .projectbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease-in-out;
+    flex-wrap: wrap;
+ }
+
+ .project{
+   width: 500px;
+   height: 300px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background-color: #4D2D52;
+   padding: 1rem;
+   margin: 1rem;
+   border-radius: 12px;
+ }
+ 
+.project img {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+}
+
+ .project div {
+   margin: 1rem;
+ }
+
+   
+
+
+
+ @media screen and (max-width: 900px) {
+  .boxa {
+    width: 100%;
+  }
+
+ }
