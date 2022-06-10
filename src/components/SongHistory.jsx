@@ -11,13 +11,19 @@ function SongHistory() {
       }, []);
 
 
-
-
+      if(!User) {
+        return <div className='boxiy'><h1>Loading User..</h1></div>;
+      }
+        
     return (
         <div className='pageone'>
            <div className='bobs'>
               <div className='bob'>
-
+                   {
+                     User.map(a => {
+                       console.log(a.Track.Artists);
+                     })
+                   }
               </div>
            </div>
         </div>
