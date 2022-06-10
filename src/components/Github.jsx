@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-function Repos() {
+function Github() {
     const [User, setData] = useState();
     useEffect(() => {
         fetch('https://api.github.com/users/Thealoq/repos')
@@ -20,13 +20,15 @@ function Repos() {
             {
                 User.map(item => {
                     return (
-                       
-                            <div className='boxa'>
+
+                        <div className='boxa'>
                             <div>
                                 <div className='boxatitle'>
-                                <a href={`https://github.com/${item.owner.login}/${item.name}`}>
-                                    <span>{item.name}</span>
-                                </a>
+                                    <div>
+                                     <a href={`https://github.com/${item.owner.login}/${item.name}`}>
+                                        <span>{item.name}</span>
+                                    </a>
+                                    </div>
                                 </div>
                                 <div>
                                     <p>{item.stargazers_count} ⭐</p>
@@ -41,4 +43,4 @@ function Repos() {
 
 }
 
-export default Repos
+export default Github

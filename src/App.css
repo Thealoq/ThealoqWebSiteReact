@@ -16,32 +16,38 @@ a{
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
+  border-radius: 50px;
   transition: all .3s ease-in-out;
 }
 
 .avatar img {
   width: 256px;
   max-width: 256px;
-  border-radius: 50%;
+  border-radius: 50px;
 }
 
 .boxiy{
   background-repeat:round;
-
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   background-color: #4D2D52;
-  height: 500px;
+  height: 700px;
   transition: all .3s ease-in-out;
 }
 
 .avatar :hover {
-  filter: grayscale(0.5);
+  filter: blur(2px);
   transition: all .3s ease-in-out;
 }
+
+.avatar img :hover{
+  filter: blur(2px);
+  transition: all .3s ease-in-out;
+  padding: 1rem;
+}
+
+
 
 .TextAll {
   transition: all .3s ease-in-out;
@@ -63,31 +69,22 @@ a{
 
 .online {
   border-radius: 50%;
-  width: 48px;
-  height: 48px;
   background-color: darkgreen;
-  position: absolute;
   margin-top: 12rem;
   margin-left: 10rem;
 }
 
 .offline {
   border-radius: 50%;
-  width: 32px;
-  height: 32px;
   background-color: rgb(56, 53, 53);
   border: rgb(75, 73, 73) solid 12px;
-  position: absolute;
   margin-top: 12rem;
   margin-left: 10rem;
 }
 
 .idle {
   border-radius: 50%;
-  width: 48px;
-  height: 48px;
   background-color: rgb(221, 122, 9);
-  position: absolute;
   margin-top: 12rem;
   margin-left: 10rem;
 }
@@ -95,10 +92,7 @@ a{
 
 .dnd {
   border-radius: 50%;
-  width: 48px;
-  height: 48px;
   background-color: rgb(204, 38, 38);
-  position: absolute;
   margin-top: 12rem;
   margin-left: 10rem;
 }
@@ -119,7 +113,9 @@ a{
   border-radius: 8px;
 }
 
-.spoftytext {
+
+
+.tiloq {
   color: black;
   padding: 1rem;
   margin-top: -3rem;
@@ -130,6 +126,21 @@ a{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.tiloq div {
+  padding: 0.5rem;
+}
+
+@keyframes song {
+  0% {
+    transform: translateX(170px);
+    transition: 5s;
+  }
+  100% {
+    transform: translateX(-170px);
+    transition: 5s;
+  }
 }
 
 .spoftytext div {
@@ -197,6 +208,7 @@ a{
   margin: 1rem;
   padding: 0.5rem;
   width: 15%;
+  height: 100px;
   border-radius: 12px;
 }
 
@@ -222,7 +234,7 @@ a{
  }
 
  .project{
-   width: 500px;
+   width: 750px;
    height: 300px;
    display: flex;
    justify-content: center;
@@ -246,7 +258,33 @@ a{
 
    
 
+.pageone {
+  padding: 3rem;
+}
 
+.bobs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .3s ease-in-out;
+  flex-wrap: wrap;
+  background-color: #4D2D52;
+  border-radius: 5px;
+  padding: 1.5rem;
+  margin: 1rem;
+}
+
+.bob {
+  display: flex;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 12px;
+  width: 100%;
+}
 
  @media screen and (max-width: 900px) {
   .boxa {
@@ -254,3 +292,6 @@ a{
   }
 
  }
+
+ 
+

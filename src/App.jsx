@@ -1,17 +1,20 @@
 import './App.css'
 import Profile from './components/Profile'
-import Header from './components/Header'
-import Project from './components/Project'
+import Github from './components/Github'
+import Hello from './components/Hello'
+import SongHistory from './components/SongHistory'
+
+
+
 
 function App() {
-  
   document.title = "Thealoq Was Here 💕";
-
   return (
     <div className="App">
       <Profile />
-      <Header />
-      <Project />
+      <SongHistory />
+      <Github />
+      <Hello />
     </div>
   )
 }

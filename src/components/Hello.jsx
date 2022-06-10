@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-function Project() {
+function Hello() {
     let array = [{
         name: 'GhostNight',
         link: 'https://cdn.discordapp.com/attachments/938465474876948581/977118329477165116/logo.png',
@@ -23,7 +23,7 @@ function Project() {
                     return (
                         <div className='project'>
                                <a href={a.url}>
-                               <div >
+                               <div>
                                     <img src={a.link} alt="project" />
                                 </div>
                                 <div>
@@ -41,4 +41,4 @@ function Project() {
     )
 
 }
-export default Project
+export default Hello
