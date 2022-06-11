@@ -290,8 +290,23 @@ a{
   .boxa {
     width: 100%;
   }
-
+  .boxiy {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .avatar {
+    margin: 0;
+  }
+  .TextAll{
+    margin-top: 2rem;
+  }
  }
 
- 
 
+  
+
+ @media screen and (max-width: 1200px) {
+ .project{
+    width: 450px;
+ }
+ }

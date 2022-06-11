@@ -146,8 +146,8 @@ function Profile() {
   return (
     <div className="box">
       <div id='test' className='boxiy'>
-      <div id='avim' className='avatar'>
-          <img src={`https://cdn.discordapp.com/avatars/${User.discord_user.id}/${User.discord_user.avatar}.${User.discord_user.avatar.startsWith("a_") ? "gif" : "png"}?size=1024`} />
+      <div  className='avatar'>
+          <img id='avim' src={`https://cdn.discordapp.com/avatars/${User.discord_user.id}/${User.discord_user.avatar}.${User.discord_user.avatar.startsWith("a_") ? "gif" : "png"}?size=1024`} />
         </div>
         <div className='TextAll'>
           <span className='Text'>Hello I' am <b className='nick'>{User.discord_user.username}#{User.discord_user.discriminator}</b> 👋</span>

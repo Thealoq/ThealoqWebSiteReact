@@ -6,13 +6,11 @@ import SongHistory from './components/SongHistory'
 
 
 
-
 function App() {
   document.title = "Thealoq Was Here 💕";
   return (
     <div className="App">
       <Profile />
-      <SongHistory />
       <Github />
       <Hello />
     </div>
